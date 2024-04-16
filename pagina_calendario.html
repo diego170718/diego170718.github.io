@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Citas</title>
+   
+    <link rel="stylesheet" type="text/css" href="style2.css">
+   
+</head>
+<body>
+    <h1>Calendario de Citas</h1>
+    <p>Selecciona una fecha y hora para tu cita:</p>
+    <form action="procesar_cita.php" method="post">
+        <label for="fecha">Fecha de la cita:</label>
+        <input type="date" id="fecha" name="fecha" required><br>
+        <label for="hora">Hora de la cita:</label>
+        <input type="time" id="hora" name="hora" required><br>
+        <label for="nombre">Tu Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="email">Tu Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <input type="submit" value="Agendar Cita">
+    </form>
+
+
+</body>
+</html>
